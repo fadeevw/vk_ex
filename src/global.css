@@ -1,0 +1,19 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .btn-primary {
+     @apply rounded-lg bg-red-500 text-gray-100 items-center transition-colors hover:bg-red-600 hover:text-white active:bg-red-300;
+   }
+   .label-primary {
+    @apply text-gray-500;
+   }
+   .label-primary-red {
+    @apply text-gray-500 after:content-['*'] after:text-red-500;
+   }
+   .input-primary {
+    @apply w-full shadow-inner rounded-[3px] px-1 text-gray-600;
+   }
+}
